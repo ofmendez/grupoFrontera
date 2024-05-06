@@ -1,0 +1,182 @@
+ 
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+ * {
+     margin: 0;
+     padding: 0;
+     -webkit-tap-highlight-color: transparent;
+     font-family: "Permanent Marker", cursive;
+     font-weight: 400;
+     font-style: normal;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+h2{
+    font-size: 40px;
+    line-height: 1em;
+}
+
+.FlexDiv{
+    display:flex;
+}
+
+.FlexRow{
+    flex-direction: row;
+}
+
+.FlexColumn{
+    flex-direction: column;
+}
+
+.ImgWidth100 img{
+    width:100%;
+}
+
+@media (max-width: 1000px){
+    h2{
+        font-size: 26px;
+        line-height: 1em;
+    }
+}
+
+ /*  ------------------ CONFIGURACIÓN GENERAL ------------------ */
+
+ .GeneralContainer{
+    width:100svw;
+    background-color:#000;
+    background-image: url("../Images/FondoDesktop.jpg");
+    background-position: center bottom;
+    background-size: cover;
+ }
+
+ .SeparadorHorizontal{
+    height:8svh;
+ }
+
+ @media (max-width: 1000px){
+    .GeneralContainer{
+        background-image: url("../Images/FondoMobile.jpg");
+     }
+
+     .SeparadorHorizontal{
+        height:4svh;
+     }
+}
+
+/*  ------------------ CONFIGURACIÓN PÁGINA HOME ------------------ */
+
+/*  ------ CONFIGURACIÓN LOGO JUGANDO ----- */
+
+ .LogoContainer{
+    padding-top:5svh;
+    width:40%;
+    max-width:550px;
+    text-align: center;
+    margin:0 auto;
+ }
+
+ @media (max-width: 1000px){
+    .LogoContainer{
+        width:70%;
+        max-width:550px;
+     }
+}
+
+  /*  ------ CONFIGURACIÓN VIDEO LANDING ----- */
+ .VideoContainer{
+    text-align: center;
+}
+
+    iframe {
+        width: 60vw;
+        height: 33vw;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+
+@media (max-width: 1000px){
+    iframe {
+        width: 90svw;
+        height: 50.6vw;
+     }
+}
+
+  /*  ------ CONFIGURACIÓN PRE SAVE ----- */
+
+.PreSaveContainer{
+    padding:0 5svw;
+    color:white;
+    text-align: center;
+}
+
+.PreSaveButton{
+    margin: 0 auto;
+    width:200px;
+    transition: 0.2s;
+}
+
+.PreSaveButton:hover{
+    transform: scale(1.04);
+}
+
+.LogosPlataformas{
+    margin: 0 auto;
+    width:50svw;
+    max-width:600px;
+}
+
+@media (max-width: 1000px){
+    .PreSaveButton{
+        width:180px;
+    }
+
+    .LogosPlataformas{
+        width:80svw;
+    }
+}
+
+
+  /*  ------ CONFIGURACIÓN LOGO GRUPO FRONTERA ----- */
+
+.LogoGFContainer{
+    width:20%;
+    max-width:200px;
+    text-align: center;
+    margin:0 auto;
+    padding-bottom:3svh;
+}
+
+@media (max-width: 1000px){
+    .LogoGFContainer{
+        width:30%;
+    }
+}
+
+/*  ------ SCROLLBAR ----- */
+
+    /* Width */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+  
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #222;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #cc0a55;
+        border-radius: 100px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #a60e45;
+    }
