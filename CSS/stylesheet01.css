@@ -180,3 +180,18 @@ h2{
     ::-webkit-scrollbar-thumb:hover {
         background: #a60e45;
     }
+
+
+
+
+
+
+    .TempContainer{
+        height:100svh;
+        width:100svw;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
