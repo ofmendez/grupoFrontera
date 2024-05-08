@@ -49,7 +49,7 @@ h2{
  .GeneralContainer{
     width:100svw;
     background-color:#000;
-    background-image: url("../Images/FondoDesktop.jpg");
+    background-image: url("../Images/FondoDesktopPreSave.jpg");
     background-position: center bottom;
     background-size: cover;
  }
@@ -60,7 +60,7 @@ h2{
 
  @media (max-width: 1000px){
     .GeneralContainer{
-        background-image: url("../Images/FondoMobile.jpg");
+        background-image: url("../Images/FondoMobilePreSave.jpg");
      }
 
      .SeparadorHorizontal{
@@ -179,19 +179,4 @@ h2{
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
         background: #a60e45;
-    }
-
-
-
-
-
-
-    .TempContainer{
-        height:100svh;
-        width:100svw;
-        background-color: #000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
     }
