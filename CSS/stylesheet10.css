@@ -135,6 +135,20 @@ h2{
      }
 }
 
+ /*  ------ CONFIGURACIÓN CÓDIGO PREVENTA ----- */
+.CodigoPreventa{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding:20px 30px 0 30px;
+}
+
+.CodigoPreventaBold{
+    font-weight: 800;
+}
+
+
   /*  ------ CONFIGURACIÓN PRE SAVE ----- */
 
 .PreSaveContainer{
