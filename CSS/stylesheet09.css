@@ -61,11 +61,14 @@ h2{
  }
 
  @media (max-width: 1000px){
-    .GeneralContainer{
-     }
-
      .SeparadorHorizontal{
         height:6svh;
+     }
+}
+
+@media (min-width: 1530px){
+    .SeparadorHorizontal{
+        height:6svw;
      }
 }
 
