@@ -1,15 +1,13 @@
  
 /* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
  * {
      margin: 0;
      padding: 0;
      -webkit-tap-highlight-color: transparent;
-     font-family: "Permanent Marker", cursive;
-     font-weight: 400;
-     font-style: normal;
 }
 
 body{
@@ -19,6 +17,11 @@ body{
 h2{
     font-size: 40px;
     line-height: 1em;
+    color:white;
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+     font-weight: 400;
+     font-style: normal;
 }
 
 .FlexDiv{
@@ -48,8 +51,7 @@ h2{
 
  .GeneralContainer{
     width:100svw;
-    background-color:#000;
-    background-image: url("../Images/FondoDesktop.jpg");
+    background-color:#564184;
     background-position: center bottom;
     background-size: cover;
  }
@@ -60,12 +62,29 @@ h2{
 
  @media (max-width: 1000px){
     .GeneralContainer{
-        background-image: url("../Images/FondoMobile.jpg");
      }
 
      .SeparadorHorizontal{
-        height:4svh;
+        height:8svh;
      }
+}
+
+/*  ------ CONFIGURACIÓN FONDO DIVIDIDO ----- */
+.FondoSuperior{
+    background-image: url("../Images/FondoSuperior.jpg");
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.FondoGradiente{
+    background: rgb(86,65,132);
+    background: linear-gradient(0deg, rgba(86,65,132,1) 0%, rgba(87,71,206,1) 28%, rgba(119,96,246,1) 42%, rgba(87,71,206,1) 72%, rgba(86,65,132,1) 100%);
+}
+
+.FondoInferior{
+    background-image: url("../Images/FondoInferior.jpg");
+    background-size: cover;
+    background-position: top center;
 }
 
 /*  ------------------ CONFIGURACIÓN PÁGINA HOME ------------------ */
@@ -141,6 +160,78 @@ h2{
     }
 }
 
+  /*  ------ CONFIGURACIÓN FECHAS CONCIERTOS ----- */
+
+  .DatesContainer{
+    max-width: 960px; /*Ancho máximo contenedor fechas*/
+    width:80%; /*Ancho contenedor fechas*/
+    margin: 0 auto;
+    padding: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+    .DatesContainer div{
+    display:flex;
+    flex-direction: row;
+    min-height: 60px; /*Altura fechas*/
+    align-items: center;
+    justify-content: center;
+}
+
+ .FechaConcierto{
+    display:flex;
+    text-align: right;
+    gap:2vw;
+    animation: fadeInAnimation 2s ease-in-out 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.DiaMesConcierto{
+    font-weight: 800;
+    font-size:18px;
+    color: white;
+    flex-basis: 14%; /*Ancho fecha mes día*/
+}
+
+.CiudadConcierto{
+    font-size:20px;
+    display: inline-block;
+    flex-basis: 32%; /*Ancho ciudad país*/
+    text-align:center;
+    color: #FFF;
+}
+
+.BotonConcierto{
+    flex-basis: 18%;/*Ancho botón*/
+}
+
+ .BotonConcierto button{
+     background-color: transparent;
+     border: 0 solid transparent;
+     transition: 0.3s;
+     width:100%;
+}
+
+@media (max-width:768px){
+    .DatesContainer div{
+        flex-direction: column;
+        min-height: 2px;
+   }
+
+   .FechaConcierto{
+    display: block;
+    text-align: center;
+    gap:1vw;
+    padding-top:4vw;
+    padding-bottom:4vw;
+}
+
+.BotonConcierto button img{
+    height:50px;
+}
+}
 
   /*  ------ CONFIGURACIÓN LOGO GRUPO FRONTERA ----- */
 
