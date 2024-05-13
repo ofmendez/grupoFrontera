@@ -65,7 +65,7 @@ h2{
      }
 
      .SeparadorHorizontal{
-        height:8svh;
+        height:6svh;
      }
 }
 
@@ -166,7 +166,7 @@ h2{
     max-width: 960px; /*Ancho máximo contenedor fechas*/
     width:80%; /*Ancho contenedor fechas*/
     margin: 0 auto;
-    padding: 30px;
+    padding: 0 30px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -182,7 +182,7 @@ h2{
  .FechaConcierto{
     display:flex;
     text-align: right;
-    gap:2vw;
+    gap:0vw;
     animation: fadeInAnimation 2s ease-in-out 1;
     align-items: center;
     justify-content: space-between;
@@ -224,8 +224,8 @@ h2{
     display: block;
     text-align: center;
     gap:1vw;
-    padding-top:4vw;
-    padding-bottom:4vw;
+    padding-top:3vw;
+    padding-bottom:3vw;
 }
 
 .BotonConcierto button img{
