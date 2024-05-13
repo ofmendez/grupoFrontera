@@ -87,6 +87,12 @@ h2{
     background-position: top center;
 }
 
+@media (max-width: 768px){
+    .FondoInferior{
+        background-image: url("../Images/FondoInferiorMobile.jpg");
+    }
+}
+
 /*  ------------------ CONFIGURACIÓN PÁGINA HOME ------------------ */
 
 /*  ------ CONFIGURACIÓN LOGO JUGANDO ----- */
@@ -182,7 +188,7 @@ h2{
  .FechaConcierto{
     display:flex;
     text-align: right;
-    gap:0vw;
+    gap:2vw;
     animation: fadeInAnimation 2s ease-in-out 1;
     align-items: center;
     justify-content: space-between;
@@ -223,7 +229,7 @@ h2{
    .FechaConcierto{
     display: block;
     text-align: center;
-    gap:1vw;
+    gap:0vw;
     padding-top:3vw;
     padding-bottom:3vw;
 }
