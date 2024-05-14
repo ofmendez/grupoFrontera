@@ -40,6 +40,10 @@ h2{
     width:100%;
 }
 
+.CursorPointer{
+    cursor:pointer ;
+}
+
 @media (max-width: 1000px){
     h2{
         font-size: 26px;
@@ -201,6 +205,8 @@ h2{
     min-height: 60px; /*Altura fechas*/
     align-items: center;
     justify-content: center;
+    text-align: center;
+    line-height: 1em;
 }
 
  .FechaConcierto{
@@ -227,6 +233,18 @@ h2{
     color: #FFF;
 }
 
+.LugarConcierto{
+    text-align: left;
+    color:#fff;
+    flex-basis: 32%;/*Ancho lugar concierto*/
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.EnlaceBoton{
+    width:100%;
+}
+
 .BotonConcierto{
     flex-basis: 18%;/*Ancho botón*/
 }
@@ -236,6 +254,11 @@ h2{
      border: 0 solid transparent;
      transition: 0.3s;
      width:100%;
+     opacity:0.7;
+}
+
+.BotonConcierto button:hover{
+    opacity:1;
 }
 
 @media (max-width:768px){
@@ -247,7 +270,7 @@ h2{
    .FechaConcierto{
     display: block;
     text-align: center;
-    gap:0vw;
+    gap:1.3vw;
     padding-top:3vw;
     padding-bottom:3vw;
 }
