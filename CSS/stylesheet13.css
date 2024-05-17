@@ -261,6 +261,10 @@ h2{
     opacity:1;
 }
 
+.FechaSoldOut{
+    opacity: 0.4 !important;
+}
+
 @media (max-width:768px){
     .DatesContainer div{
         flex-direction: column;
