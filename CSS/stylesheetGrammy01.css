@@ -1,0 +1,130 @@
+ * {
+     margin: 0;
+     padding: 0;
+     -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #0E0303;
+}
+
+.FlexDiv{
+    display:flex;
+}
+
+.FlexRow{
+    flex-direction: row;
+}
+
+.FlexColumn{
+    flex-direction: column;
+}
+
+.ImgWidth100{
+    width:100%;
+}
+
+.CursorPointer{
+    cursor:pointer ;
+}
+
+ /*  ------------------ CONFIGURACIÓN GENERAL ------------------ */
+
+ .GeneralContainer{
+    width:100svw;
+    background-color:#0E0303;
+    background-position: center top;
+    background-size: cover;
+    background-image: url("../Images/GrammyDesktopBackground.jpg");
+    background-repeat: no-repeat;
+ }
+
+@media (max-width: 820px){
+    .GeneralContainer{
+        background-image: url("../Images/GrammyMobileBackground.jpg");
+        background-size: contain;
+     }
+}
+
+
+/*  ------------------ CONFIGURACIÓN PÁGINA  ------------------ */
+
+.LatinGrammy{
+    width:30%;
+    padding:2svw 4svw;
+}
+
+@media (max-width: 820px){
+    .LatinGrammy{
+        width:40%;
+        padding:5svw 6svw;
+    }
+}
+
+.SeparadorFoto{
+    height:30svw;
+}
+
+@media (max-width: 820px){
+    .SeparadorFoto{
+        height:50svw;
+    }
+}
+
+.GrupoFrontera{
+width:45%;
+margin: 0 auto;
+display:block;
+}
+
+@media (max-width: 820px){
+    .GrupoFrontera{
+        width:65%;
+        }
+}
+
+.SeparadorDiscos{
+    height:8svw;
+}
+
+.ContenedorDiscos{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:0 auto;
+    column-gap: 30px;
+    width:45%;
+}
+
+@media (max-width: 820px){
+    .ContenedorDiscos{
+        flex-direction: column;
+        width:40%;
+        row-gap: 8svw;
+    }
+}
+
+.ColumnaDisco{
+   display: flex;
+   flex-direction: column;
+   width:50%;
+   row-gap: 3svw;
+}
+
+@media (max-width: 820px){
+    .ColumnaDisco{
+        width:100%;
+     }
+}
+
+.EnlacesPlataformas{
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1svw;
+}
+
+.SeparadorFinal{
+    height:20svw;
+}
